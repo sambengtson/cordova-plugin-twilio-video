@@ -346,7 +346,9 @@ NSString *const CLOSED = @"CLOSED";
                       participant.identity,
                       (unsigned long)[participant.audioTracks count],
                       (unsigned long)[participant.videoTracks count]]];
-    [[TwilioVideoManager getInstance] publishEvent: PARTICIPANT_CONNECTED];
+    
+    NSDictionary *d = @{@"identity": participant.identity};
+    [[TwilioVideoManager getInstance] publishEvent: PARTICIPANT_CONNECTED with:d];
 }
 
 - (void)room:(TVIRoom *)room participantDidDisconnect:(TVIRemoteParticipant *)participant {
@@ -354,7 +356,9 @@ NSString *const CLOSED = @"CLOSED";
         [self cleanupRemoteParticipant];
     }
     [self logMessage:[NSString stringWithFormat:@"Room %@ participant %@ disconnected", room.name, participant.identity]];
-    [[TwilioVideoManager getInstance] publishEvent: PARTICIPANT_DISCONNECTED];
+    
+    NSDictionary *d = @{@"identity": participant.identity};
+    [[TwilioVideoManager getInstance] publishEvent: PARTICIPANT_DISCONNECTED with:d];
 }
 
 #pragma mark - TVIRemoteParticipantDelegate
