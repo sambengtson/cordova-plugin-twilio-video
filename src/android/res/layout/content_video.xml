@@ -10,8 +10,8 @@
 
     <com.twilio.video.VideoView
         android:id="@+id/thumbnail_video_view"
-        app:overlaySurface="true"
-        app:mirror="true"
+        app:tviOverlaySurface="true"
+        app:tviMirror="true"
         android:visibility="gone"
         android:layout_width="96dp"
         android:layout_height="96dp"
@@ -23,23 +23,5 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-   <!--  <LinearLayout
-        android:id="@+id/status"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="bottom"> -->
-
-        <!-- <TextView
-            android:id="@+id/video_status_textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColor="@color/colorAccent"
-            android:textSize="20sp"
-            android:text="@string/room_status"/> -->
-
-    <!-- </LinearLayout> -->
 
 </FrameLayout>
