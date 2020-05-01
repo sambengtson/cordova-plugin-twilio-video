@@ -10,7 +10,7 @@ Cordova Plugin for Twilio Video
 - Add this to the 'package.json'
     - In the dependencies section:
     ```
-    "cordova-plugin-twilio-video": "https://github.com/okode/cordova-plugin-twilio-video"
+    "cordova-plugin-twilio-video": "https://github.com/sambengtson/cordova-plugin-twilio-video"
     ```
 
     - In the cordova plugins section:
@@ -21,7 +21,7 @@ Cordova Plugin for Twilio Video
 ### Capacitor project
 - Add this dependency to the 'package.json':
     ```
-    "cordova-plugin-twilio-video": "https://github.com/okode/cordova-plugin-twilio-video",
+    "cordova-plugin-twilio-video": "https://github.com/sambengtson/cordova-plugin-twilio-video",
     ```
 
 ## API
