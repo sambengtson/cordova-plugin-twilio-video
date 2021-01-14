@@ -26,6 +26,8 @@
         <source-file src="src/ios/TwilioVideoManager.m" />
         <header-file src="src/ios/TwilioVideoConfig.h" />
         <source-file src="src/ios/TwilioVideoConfig.m" />
+        <source-file src="src/ios/TwilioVideoUtils.h" />
+        <source-file src="src/ios/TwilioVideoUtils.m" />
         <resource-file src="src/ios/Resources/TwilioVideo.storyboard" target="Resources/TwilioVideo.storyboard" />
         <resource-file src="src/ios/Resources/end_call.png" target="Resources/end_call.png" />
         <resource-file src="src/ios/Resources/end_call@2x.png" target="Resources/end_call@2x.png" />
@@ -46,13 +48,13 @@
         <resource-file src="src/ios/Resources/switch_camera@2x.png" target="Resources/switch_camera@2x.png" />
         <resource-file src="src/ios/Resources/switch_camera@3x.png" target="Resources/switch_camera@3x.png" />
 
-        <framework src="TwilioVideo" type="podspec" spec="2.5.6"/>
+        <framework src="TwilioVideo" type="podspec" spec="3.7.2"/>
         <podspec>
             <config>
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods>
-                <pod name="TwilioVideo" spec="2.5.6"/>
+                <pod name="TwilioVideo" spec="3.7.2"/>
             </pods>
         </podspec>
 
